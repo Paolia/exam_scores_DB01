@@ -1,0 +1,148 @@
+<h2 id="toptitle">試験の結果を入力する</h2>
+<main>
+  <form method="post" action="confirm.php">
+    <div class="line">
+      <div class="title">名前：</div>
+      <div><input type="text" name="name" id="name"></div>
+    </div>
+    <div class="line">
+      <div class="title">学年：</div>
+      <div>
+        <select name="grade" id="grade">
+          <option value="１年">１年</option>
+          <option value="２年">２年</option>
+          <option value="３年">３年</option>
+        </select>
+      </div>
+      <div class="title">クラス：</div>
+      <div>
+        <select name="class" id="class">
+          <option value="１組">１組</option>
+          <option value="２組">２組</option>
+          <option value="３組">３組</option>
+          <option value="４組">４組</option>
+          <option value="５組">５組</option>
+          <option value="６組">６組</option>
+          <option value="７組">７組</option>
+          <option value="８組">８組</option>
+        </select>
+      </div>
+    </div>
+    <div class="line">
+      <div class="title">Eメール：</div>
+      <div><input type="email" name="email"></div>
+    </div>
+    <div class="line">
+      <div class="title">対象試験：</div>
+      <div>
+        <select name="exam" id="exam">
+          <option value="１学期中間試験">１学期中間試験</option>
+          <option value="１学期期末試験">１学期期末試験</option>
+          <option value="２学期中間試験">２学期中間試験</option>
+          <option value="２学期期末試験">２学期期末試験</option>
+          <option value="３学期中間試験">３学期中間試験</option>
+          <option value="３学期期末試験">３学期期末試験</option>
+        </select>
+      </div>
+    </div>
+    <div class="line">
+      <div class="title">国語：</div>
+      <div><input class="score" type="number" name="japanese"></div>
+    </div>
+    <div class="line">
+      <div class="title">数学：</div>
+      <div><input class="score" type="number" name="math"></div>
+    </div>
+    <div class="line">
+      <div class="title">理科：</div>
+      <div><input class="score" type="number" name="science"></div>
+    </div>
+    <div class="line">
+      <div class="title">社会：</div>
+      <div><input class="score" type="number" name="social"></div>
+    </div>
+    <div class="line">
+      <div class="title">英語：</div>
+      <div><input class="score" type="number" name="english"></div>
+    </div>
+    <div class="line">
+      <div class="title"><button type="submit" id="submit">送信</button></div>
+    </div>
+  </form>
+  <div>
+    <h2>試験結果の記録を見る</h2>
+    <table id="check">
+      <tr>
+        <td colspan="4">クラス別成績一覧</td>
+      </tr>
+      <tr>
+        <form method="post" action="by_class.php">
+          <td>
+            <select name="grade_bc" id="grade_bc">
+              <option value="7th_gr">1年</option>
+              <option value="8th_gr">2年</option>
+              <option value="9th_gr">3年</option>
+            </select>
+          </td>
+          <td>
+            <select name="class_bc" id="class_bc">
+              <option value="class_1">1組</option>
+              <option value="class_2">2組</option>
+              <option value="class_3">3組</option>
+              <option value="class_4">4組</option>
+              <option value="class_5">5組</option>
+              <option value="class_6">6組</option>
+              <option value="class_7">7組</option>
+              <option value="class_8">8組</option>
+            </select>
+          </td>
+          <td>
+            <select name="exam_bc" id="exam_bc">
+              <option value="1tri-mid">1学期中間試験</option>
+              <option value="1tri-end">1学期期末試験</option>
+              <option value="2tri-mid">2学期中間試験</option>
+              <option value="2tri-end">2学期期末試験</option>
+              <option value="3tri-mid">3学期中間試験</option>
+              <option value="3tri-end">3学期期末試験</option>
+            </select>
+          </td>
+          <td>
+            <div class="title"><button type="submit" id="by_class">学級別成績一覧</button></div>
+          </td>
+        </form>
+      </tr>
+      <tr>
+        <td colspan="4">個人別成績：クラス別個人名取得</td>
+      </tr>
+      <tr>
+        <form method="post" action="get_names.php">
+          <td>
+            <select name="grade_gn" id="grade_gn">
+              <option value="7th_gr">1年</option>
+              <option value="8th_gr">2年</option>
+              <option value="9th_gr">3年</option>
+            </select>
+          </td>
+          <td>
+            <select name="class_gn" id="class_gn">
+              <option value="class_1">1組</option>
+              <option value="class_2">2組</option>
+              <option value="class_3">3組</option>
+              <option value="class_4">4組</option>
+              <option value="class_5">5組</option>
+              <option value="class_6">6組</option>
+              <option value="class_7">7組</option>
+              <option value="class_8">8組</option>
+            </select>
+          </td>
+          <td colspan="2">
+            <div class="title"><button onclick="location.href='summary.php'">クラス名簿取得</button></div>
+          </td>
+        </form>
+      </tr>
+      <tr>
+        <td colspan="4">Back to top</td>
+      </tr>
+    </table>
+  </div>
+</main>

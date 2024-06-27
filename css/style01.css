@@ -1,0 +1,183 @@
+body {
+    background: rgb(23, 135, 73);
+    background-image: url("../img/tartanM.png");
+    color: white;
+}
+
+header {
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    background-color: rgb(67, 49, 13);
+    background-image: url("../img/wood.jpg");
+    color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 8px solid #222;
+}
+
+h2 {
+    margin-left: 37%;
+    margin-top: 20px;
+    margin-bottom: 2px;
+}
+
+#conf {
+    margin-top: 100px;
+}
+
+#toptitle {
+    margin-top: 95px;
+}
+
+#check {
+    width: 50%;
+    display: flex;
+    margin-left: 30%;
+}
+#check button {
+    z-index: 1;
+    margin-left: 60px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 32px;
+    color: rgb(108 80 15);
+    background-color: rgb(216, 160, 30);
+    filter: drop-shadow(4px 4px 4px rgb(10 10 10));
+    font-size: 21px;
+    border-radius: 8px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    padding: 4px;
+    background-color: rgb(67, 49, 13);
+    background-image: url("../img/wood.jpg");
+    color: #eee;
+    font-size: 18px;
+    text-align: end;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    border-top: 4px solid #222;
+}
+
+footer p {
+    padding-right: 40px;
+}
+
+#confirm {
+    margin-top: 20px;
+    margin-left: 30%;
+}
+#confirm td {
+    width: 220px;
+}
+
+form {
+    /*padding-top: 5px;*/
+    padding-left: 32%;
+    /*display: flex;*/
+    /*justify-content: center;*/
+}
+
+#form2 {
+    /*padding-top: 5px;*/
+    padding-left: 2%;
+    /*display: flex;*/
+    /*justify-content: center;*/
+}
+
+form p {
+    margin: 10px;
+}
+
+form input {
+    color: black;
+    background-color: #eee;
+}
+
+form select {
+    color: black;
+    background-color: #eee;
+}
+
+form .score {
+    width: 60px;
+    color: black;
+    background-color: #eee;
+}
+
+form .line {
+    display: flex;
+    margin: 6px;
+}
+
+form .title {
+    margin-left: 40px;
+    width: 80px;
+}
+
+button {
+    z-index: 1;
+    margin-left: 60px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    width: 120px;
+    height: 36px;
+    color: rgb(108 80 15);
+    background-color: rgb(216, 160, 30);
+    filter: drop-shadow(4px 4px 4px rgb(10 10 10));
+    font-size: 24px;
+    border-radius: 8px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+button:hover {
+    background-color: aqua;
+    filter: drop-shadow(2px 2px 2px rgb(5 5 5));
+    translate: 1px 1px;
+}
+
+button:active {
+    color: rgb(255 190 36);
+    background-color: rgb(216, 160, 30);
+    filter: drop-shadow(2px 2px 2px rgb(50 0 50));
+    translate: 2px 2px;
+}
+
+#registar {
+    margin: o, auto;
+}
+
+.by_class_table {
+    width: 800px;
+    margin-left: 25%;
+}
+
+#backbtn {
+    margin-left: 40%;
+    width: 80px;
+}
+#backbtn2 {
+    margin-left: 40%;
+    width: 80px;
+}
+#name_sel {
+    width: 200px;
+    height: 30px;
+    font-size: 24px;
+    margin-top: 100px;
+    margin-left: 5%;
+}
